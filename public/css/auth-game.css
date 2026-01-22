@@ -1,0 +1,121 @@
+:root {
+    --gold: #D4AF37;
+    --dark: #1f1a17;
+    --wood: #5a3e26;
+    --light: #f8f5e6;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #1a1410, #000000);
+    font-family: 'Cinzel', serif;
+    color: var(--light);
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    backdrop-filter: blur(4px);
+    padding: 20px;
+}
+
+.auth-card {
+    background: rgba(25, 20, 16, 0.85);
+    border: 2px solid rgba(212, 175, 55, 0.5);
+    border-radius: 15px;
+    padding: 30px 40px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0,0,0,0.7);
+}
+
+.auth-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--gold);
+    text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+}
+
+.form-control {
+    background: rgba(255,255,255,0.07);
+    color: var(--light);
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.form-control:focus {
+    background: rgba(255,255,255,0.12);
+    border-color: var(--gold);
+    color: var(--light);
+    box-shadow: 0 0 8px rgba(212,175,55,0.6);
+}
+
+.btn-gold {
+    background: var(--gold);
+    color: #2f1f10;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.4);
+}
+
+.btn-gold:hover {
+    background: #f3d675;
+    transform: translateY(-2px);
+    transition: 0.2s;
+}
+
+select.form-control, 
+select {
+    background: rgba(255,255,255,0.1);
+    color: var(--light);
+    border: 1px solid rgba(212,175,55,0.6);
+    font-family: 'Cinzel', serif;
+}
+
+select option {
+    background: #1a1410;
+    color: var(--light);
+}
+/* ===== KINGDOM HOME UI ===== */
+
+.kingdom-card {
+    max-width: 700px;
+    margin: 80px auto;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 40px;
+    border: 1px solid rgba(212,175,55,0.4);
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    color: var(--light);
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+
+.kingdom-title {
+    color: var(--gold);
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.kingdom-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.kingdom-highlight {
+    color: var(--gold);
+    font-weight: bold;
+}
+table td, table th {
+    color: var(--light) !important;
+}
+
