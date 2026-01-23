@@ -70,7 +70,7 @@
     <h2 class="sub-title">➕ Bangun Bangunan Baru</h2>
 
     <div class="build-options">
-        @foreach ($allBuildings as $b)
+        @foreach ($allBuildings->where('name', '!=', 'Bangunan Utama') as $b)
             <div class="build-card">
                 <h3>{{ $b->name }}</h3>
 
@@ -91,7 +91,6 @@
             </div>
         @endforeach
     </div>
-
 </div>
 
 @endsection
